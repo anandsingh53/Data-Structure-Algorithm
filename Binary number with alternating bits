@@ -1,0 +1,16 @@
+# Leetcode problem 693 
+# Binary number with alternating bits 
+class Solution {
+public:
+    bool hasAlternatingBits(int n) {
+        bitset<32> b(n);
+        int hbit = log2(n);
+        for(int i =0; i<=hbit; i++){
+            if(b[i]==b[i+1]) return false;
+            
+
+        }
+        return true;
+        
+    }
+};
